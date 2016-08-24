@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Take Note</string>
+    <string name="addBtn">Add</string>
+    <string name="editBtn">Edit</string>
+    <string name="deleteBtn">Delete</string>
+    <string name="checkBtn">Check</string>
+    <string name="back">Back</string>
+    <string name="yourNotes">Your Notes</string>
+    <string name="noteSub">Note Subject:</string>
+    <string name="note">Note:</string>
+    <string name="yourNote">View Note</string>
+    <string name="star">Star</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="plusSign">+</string>
+    <string name="search_menu">Search</string>
+    <string name="delete_menu">Delete</string>
+    <string name="share_menu">Share</string>
+    <string name="sortBy_menu">Sort By</string>
+    <string name="noteSubject_add">Note Subject</string>
+    <string name="note_add">Note</string>
+
+</resources>
