@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="erreii.getbudget">
+    package="erreii.takenote">
 
     <application
         android:allowBackup="true"
@@ -8,16 +8,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="erreii.takenote.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddItem"/>
-        <activity android:name=".CheckNotes"/>
-        <activity android:name=".DisplayNotes"/>
-        <activity android:name=".EditNote"/>
+        <activity android:name="erreii.takenote.AddItem"/>
+        <activity android:name="erreii.takenote.CheckNotes"/>
+        <activity android:name="erreii.takenote.DisplayNotes"/>
+        <activity android:name="erreii.takenote.EditNote"/>
     </application>
 
 </manifest>

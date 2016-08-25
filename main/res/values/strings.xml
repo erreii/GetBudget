@@ -19,5 +19,5 @@
     <string name="sortBy_menu">Sort By</string>
     <string name="noteSubject_add">Note Subject</string>
     <string name="note_add">Note</string>
-
+    <string name="category_disp">Category:</string>
 </resources>

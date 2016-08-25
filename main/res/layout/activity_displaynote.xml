@@ -79,14 +79,26 @@
             android:layout_height="wrap_content"
             android:paddingTop="5dp"
             />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/note"
+            android:text="@string/category_disp"
             android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
             android:textColor="#992f2f"/>
+        <TextView
+            android:id="@+id/category_disp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingTop="5dp"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/note"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+        android:textColor="#992f2f"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -104,6 +116,7 @@
                 android:paddingTop="5dp"/>
         </LinearLayout>
         </ScrollView>
+
     </LinearLayout>
 
 </LinearLayout>
