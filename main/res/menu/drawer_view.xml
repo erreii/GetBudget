@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single" android:id="@+id/const_menu">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/appicon"
+            android:title="All Notes"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/filefolder"
+            android:title="Add Category" />
+    </group>
+
+
+    <item android:title="Categories">
+        <menu android:id="@+id/dynamic_menu">
+            <group android:checkableBehavior="single" >
+
+            </group>
+        </menu>
+    </item>
+
+
+
+
+</menu>

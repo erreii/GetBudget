@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuAdd_addImg"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Add Image"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuAdd_save"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Save"
+        android:visible="true"
+        app:showAsAction="always" />
+
+</menu>

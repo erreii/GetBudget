@@ -1,8 +1,13 @@
 package erreii.takenote;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,11 +20,9 @@ import android.widget.Toast;
 public class EditNote extends AppCompatActivity {
 
     private DBHelper db;
-    private TextView editSubject_txt, noteEdit_txt;
-    private Button confirmEdit;
+    private Toolbar toolbar;
 
-    public static final String NOTES_TABLE_NAME = "notes";
-    public static final String CATEGORIES_TABLE_NAME = "categories";
+
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -28,7 +31,16 @@ public class EditNote extends AppCompatActivity {
 
         db = new DBHelper(this);
 
-        editSubject_txt = (TextView) findViewById(R.id.noteEditSubject);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        setTitle("Edit Note");
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+
+        /*editSubject_txt = (TextView) findViewById(R.id.noteEditSubject);
         noteEdit_txt = (TextView) findViewById(R.id.noteEdit_txv);
 
 
@@ -62,8 +74,33 @@ public class EditNote extends AppCompatActivity {
                 public void onClick(View view) {
                     Toast.makeText(getApplicationContext(),editSubject_txt.getText(),Toast.LENGTH_SHORT).show();
                 }
-            });
+            });*/
 
+
+    }
+
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_add, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
         }
+        /*switch (item.getItemId()) {
+            case R.id.menuAdd_addImg:
+                selectImage();
+                break;
+            default:
+                break;
+
+        }*/
+        return super.onOptionsItemSelected(item);
+
     }
 }
